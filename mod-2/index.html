@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="la">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assign 2</title>
+	<style>
+		*{
+			box-sizing: border-box;
+			font-family: Helvetica;
+		}
+		h1{
+			font-size: 2.75em;
+			text-align: center;
+		}
+				
+		.main{
+			width: 100%;
+	
+		}
+
+		.divide-lg-1, .divide-md-1{
+			border:1px solid white;
+			position: relative;
+		}
+
+		.title1, .title2{
+			text-align: center;
+			font-size: 1.25em;
+			background-color: skyblue;
+			position: absolute;
+			width: 100px;
+			top: -4px;
+			right: 5%;
+			border:1px solid black;
+		}
+
+		.text1, .text2{
+			width: 90%;
+			background-color: silver;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 10px;
+			padding-top: 30px;
+			position: relative;
+			border:1px solid black;
+		}
+
+		#t1{
+			background-color: pink;
+		}
+
+		#t2{
+			background-color: lightcoral;
+		}
+
+		#t3{
+			background-color: cornsilk
+		}
+		
+		/*For large screens*/
+		@media (min-width: 992px){
+
+		    .divide-lg-1, .divide-md-2{
+		    	float: left;
+		    	width:33.33%;
+			}		
+		}
+		/*For moderate screens*/
+		@media (max-width: 991px) and (min-width: 768px) {
+
+			.title3{
+				top:-4%;
+			    right:2.5%;
+		    }
+
+			.text3{
+				padding-top: 30px;
+			    width: 95%
+		    }
+			
+		    .divide-md-1{
+		    	float: left;
+		    	width:50%;
+		    }
+		    .divide-md-2{
+		    	float: left;
+		    	width:100%;
+		    }
+
+		}
+	</style>
+</head>
+<body>
+	<h1>Our Menu</h1>
+	<div class="main">
+		<div class="divide-lg-1 divide-md-1">
+			<p class="text1 text2">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil!
+				<p class="title1 title2" id="t1">
+				  Chicken
+			   </p>
+			</p>
+			
+		</div>
+		<div class="divide-lg-1 divide-md-1">
+			<p class="text1 text 2">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil!
+				<p class="title1 title2" id="t2">
+				  Beef
+			   </p>
+			</p>
+			
+		</div>
+		<div class="divide-lg-1 divide-md-2">
+			<p class="text1 text3">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil!
+				<p class="title1 title3" id="t3">
+				  Sushi
+			   </p>
+			</p>
+			
+		</div>
+	</div>
+</body>
+</html>
